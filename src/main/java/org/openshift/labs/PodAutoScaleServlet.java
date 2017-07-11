@@ -39,7 +39,7 @@ public class PodAutoScaleServlet extends HttpServlet {
         
         System.out.println("[" + sdf.format(new Date()) + "] - " + Thread.currentThread().getName() + " start");
         
-        String term = System.getProperty("CPU_OCCUPATION_TIME", "10");
+        String term = System.getProperty("CPU_OCCUPATION_TIME", "5");
         int mins = Integer.parseInt(term);
         long millis = mins * 60 * 1000;
         long start = System.currentTimeMillis();
